@@ -1,0 +1,4 @@
+# Tailor Shop POS — issued product keys (dev-only record, never ship this file)
+# format: <timestamp>	<duration>	<key>	<note>
+
+2026-07-27T05:20:52.244Z	Lifetime	TS-LZ3P83N-150333BB	verification test

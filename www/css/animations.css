@@ -1,0 +1,42 @@
+/* ============================================================
+   Tailor Shop POS — Animations
+   ============================================================ */
+
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes fadeSlideUp { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes toastIn { from { opacity: 0; transform: translateY(-10px) scale(.98); } to { opacity: 1; transform: translateY(0) scale(1); } }
+@keyframes spin { to { transform: rotate(360deg); } }
+@keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: .45; } }
+@keyframes ripple { from { transform: scale(0); opacity: .45; } to { transform: scale(2.2); opacity: 0; } }
+
+.spinner {
+  width: 22px; height: 22px;
+  border: 3px solid rgba(255,255,255,.35);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: spin .7s linear infinite;
+  display: inline-block;
+}
+.spinner.dark { border-color: rgba(15,23,42,.15); border-top-color: var(--color-primary); }
+
+.skeleton {
+  background: linear-gradient(90deg, var(--color-border) 25%, var(--color-surface-alt) 37%, var(--color-border) 63%);
+  background-size: 400% 100%;
+  animation: skeletonWave 1.4s ease infinite;
+  border-radius: var(--radius-sm);
+}
+@keyframes skeletonWave { 0% { background-position: 100% 50%; } 100% { background-position: 0 50%; } }
+
+.pulse-dot { animation: pulse 1.6s ease infinite; }
+
+.ripple-wrap { position: relative; overflow: hidden; }
+.ripple-el {
+  position: absolute; border-radius: 50%;
+  background: rgba(255,255,255,.6);
+  transform: scale(0);
+  pointer-events: none;
+  animation: ripple .5s ease-out forwards;
+}
+
+/* screen transition (router swaps main content) */
+.route-enter { animation: fadeSlideUp .22s ease both; }

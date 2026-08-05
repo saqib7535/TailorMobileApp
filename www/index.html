@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover" />
+  <meta name="color-scheme" content="light dark" />
+  <title>Tailor Shop POS</title>
+
+  <link rel="stylesheet" href="css/theme.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/print.css" />
+  <link rel="stylesheet" id="rtl-stylesheet" href="css/rtl.css" disabled />
+</head>
+<body>
+  <div id="app">
+    <div id="boot-splash" class="login-screen">
+      <div class="center" style="color:#fff">
+        <div class="spinner" style="margin:0 auto 12px"></div>
+        <div>Loading…</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Vendor libraries (all local, no CDN — must work fully offline) -->
+  <script src="js/vendor/sql-wasm.js"></script>
+  <script src="js/vendor/jspdf.umd.min.js"></script>
+  <script src="js/vendor/jspdf.plugin.autotable.js"></script>
+  <script src="js/vendor/qrcode.js"></script>
+  <script src="js/vendor/JsBarcode.all.min.js"></script>
+  <script src="js/vendor/jsQR.js"></script>
+
+  <!-- DB layer -->
+  <script src="js/db/schema.js"></script>
+  <script src="js/db/db.js"></script>
+
+  <!-- i18n -->
+  <script src="js/i18n/i18n.js"></script>
+
+  <!-- UI helpers -->
+  <script src="js/ui/icons.js"></script>
+  <script src="js/ui/format.js"></script>
+  <script src="js/ui/toast.js"></script>
+  <script src="js/ui/modal.js"></script>
+  <script src="js/ui/lightbox.js"></script>
+  <script src="js/ui/router.js"></script>
+  <script src="js/ui/print.js"></script>
+  <script src="js/ui/nativeSave.js"></script>
+  <script src="js/ui/backButton.js"></script>
+  <script src="js/ui/printPreview.js"></script>
+  <script src="js/ui/documents.js"></script>
+  <script src="js/ui/theme.js"></script>
+  <script src="js/ui/scanner.js"></script>
+
+  <!-- Services -->
+  <script src="js/services/cryptoUtil.js"></script>
+  <script src="js/services/settingsService.js"></script>
+  <script src="js/services/licenseService.js"></script>
+  <script src="js/services/authService.js"></script>
+  <script src="js/services/customerService.js"></script>
+  <script src="js/services/categoryService.js"></script>
+  <script src="js/services/measurementFieldService.js"></script>
+  <script src="js/services/fabricTypeService.js"></script>
+  <script src="js/services/designOptionService.js"></script>
+  <script src="js/services/measurementService.js"></script>
+  <script src="js/services/orderService.js"></script>
+  <script src="js/services/supplierService.js"></script>
+  <script src="js/services/inventoryService.js"></script>
+  <script src="js/services/purchaseService.js"></script>
+  <script src="js/services/expenseService.js"></script>
+  <script src="js/services/dashboardService.js"></script>
+  <script src="js/services/reportService.js"></script>
+  <script src="js/services/userService.js"></script>
+  <script src="js/services/backupService.js"></script>
+
+  <!-- Screens -->
+  <script src="js/screens/placeholder.js"></script>
+  <script src="js/screens/activation.js"></script>
+  <script src="js/screens/login.js"></script>
+  <script src="js/screens/more.js"></script>
+  <script src="js/screens/customers.js"></script>
+  <script src="js/screens/categories.js"></script>
+  <script src="js/screens/measurementFields.js"></script>
+  <script src="js/screens/fabricTypes.js"></script>
+  <script src="js/screens/designOptions.js"></script>
+  <script src="js/screens/measurements.js"></script>
+  <script src="js/screens/paymentModal.js"></script>
+  <script src="js/screens/delivery.js"></script>
+  <script src="js/screens/orders.js"></script>
+  <script src="js/screens/neworder.js"></script>
+  <script src="js/screens/ordersearch.js"></script>
+  <script src="js/screens/suppliers.js"></script>
+  <script src="js/screens/inventory.js"></script>
+  <script src="js/screens/purchases.js"></script>
+  <script src="js/screens/newpurchase.js"></script>
+  <script src="js/screens/expenses.js"></script>
+  <script src="js/screens/dashboard.js"></script>
+  <script src="js/screens/reports.js"></script>
+  <script src="js/screens/users.js"></script>
+  <script src="js/screens/appsettings.js"></script>
+  <script src="js/screens/backup.js"></script>
+
+  <!-- Bootstrap -->
+  <script src="js/app.js"></script>
+</body>
+</html>

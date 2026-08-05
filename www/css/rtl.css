@@ -1,0 +1,31 @@
+/* ============================================================
+   Tailor Shop POS — RTL overrides (Urdu)
+   Loaded only when the active language direction is RTL.
+   Most layout already uses flex + logical properties, so this
+   file only patches the few places with hard left/right values.
+   ============================================================ */
+
+@font-face {
+  font-family: "Jameel Noori Nastaleeq";
+  src: url("../assets/fonts/JameelNooriNastaleeq.woff2") format("woff2"),
+       url("../assets/fonts/JameelNooriNastaleeq.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+[dir="rtl"] body { font-family: "Jameel Noori Nastaleeq", "Noto Nastaliq Urdu", "Noto Naskh Arabic", var(--font-main); }
+[dir="rtl"] input, [dir="rtl"] select, [dir="rtl"] textarea, [dir="rtl"] button { font-family: inherit; }
+
+[dir="rtl"] .bottom-nav .nav-item.active::before { transform: translateX(50%); }
+
+[dir="rtl"] .search-bar input { text-align: right; }
+
+[dir="rtl"] .list-row .end { text-align: start; }
+
+[dir="rtl"] table.data-table th,
+[dir="rtl"] table.data-table td { text-align: right; }
+
+[dir="rtl"] .modal-overlay { direction: rtl; }
+
+[dir="rtl"] .icon-btn.back-btn svg { transform: scaleX(-1); }
